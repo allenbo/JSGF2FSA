@@ -1,0 +1,1078 @@
+#JSGF V1.0 ISO8859-1 cn;
+grammar main;
+public <main> = ("<s>" (
+  gei3 ["<sil>"] (<Contact>|<PhoneNumber>) ["<sil>"] <action>
+| <action> ["<sil>"] gei3 ["<sil>"] (<Contact>|<PhoneNumber>)
+| (hu1 jiao4|bo1 da3|da3 gei3) ["<sil>"] (<Contact>|<PhoneNumber>)
+) "</s>");
+
+<action> =
+  da3 dian4 hua4
+| fa1 duan3 xin4
+| fa1 xin4 xi1
+| fa1 xiao1 xi0
+| fa1 duan3 xiao1 xi0
+| da3 ge4 dian4 hua4
+| fa1 ge0 duan3 xin4
+| fa1 ge4 duan3 xin4
+| fa1 ge0 xin4 xi1
+| fa1 ge4 xin4 xi1
+| fa1 ge0 xiao1 xi0
+| fa1 ge4 xiao1 xi0
+| fa1 ge0 duan3 xiao1 xi0
+| fa1 ge4 duan3 xiao1 xi0
+| fa1 tiao2 duan3 xin4
+| fa1 tiao2 xin4 xi1
+| fa1 tiao2 xiao1 xi0
+| fa1 tiao2 duan3 xiao1 xi0
+;
+<Contact> =
+  ai4 ben3 mei3 sui4
+| ai4 yi2 bo2
+| an1 juan1
+| an1 wen2 yi1
+| an1 xin1
+| ban3 xia4 qian1 li3 zi3
+| bao1 zi4 chao1
+| ben3 tian2 ya3 ren2
+| bi4 xiao3 yan4
+| bian4 yi4 jiong3
+| bin1 tian2 dian3 zi3
+| cai4 chao1 chao1
+| cai4 zheng4
+| cai4 zhi4 huai2
+| cang1 fu1 lian2
+| cao2 bing1 qing1
+| cao2 gan1 ming2
+| cao2 qian2 ming2
+| cao2 xiang2 yan2
+| cao2 yong3 hui1
+| cao2 yu3 xin1
+| cen2 ru2 feng1
+| ceng2 liang2 jia1
+| ceng2 sheng1 jian1
+| ceng2 xiang2 wei1
+| cha2 na4
+| cha2 ru3 jun4
+| chai2 qing1
+| che1 cheng2 yuan2
+| chen2 chuan2 liang4
+| chen2 chun1 miao2
+| chen2 cui4 lian2
+| chen2 hua2 xiu4
+| chen2 hua4 xiu4
+| chen2 jia1 liang4
+| chen2 jian4 feng1
+| chen2 jian4 wu3
+| chen2 li4 ping2
+| chen2 lu4 lu4
+| chen2 meng3
+| chen2 nan2 ding1 wei2
+| chen2 pu3 rong2
+| chen2 qi2 hu3
+| chen2 quan2 wen2
+| chen2 shan1 qing1
+| chen2 sheng1 hu3
+| chen2 sheng4 hu3
+| chen2 wei3 long2
+| chen2 wei3 qing1
+| chen2 xiao3 jun1
+| chen2 xue3 jun1
+| chen2 xue3 mei2
+| chen2 yao2 ji1
+| chen2 ying1 xia2
+| chen2 you3 yong3
+| chen2 yu2
+| chen2 yu4 zhao1
+| chen2 yuan2 long2
+| chen2 yue4 jiao1
+| chen2 zhuan4 liang4
+| cheng2 chao1 ying3
+| cheng2 hua2 rong2
+| cheng2 qing4 chun1
+| cheng2 shang4 hai3
+| cheng2 yin2
+| cheng2 yin2 xian2
+| cheng2 yu4 zhi1
+| chu1 wai4 kao4 peng2 you3
+| cui1 can4 hong2
+| cui1 guo2 sheng1
+| cui1 guo2 sheng4
+| cui1 yan2 hui1
+| da4 shi2
+| dai4 hong2 chun1
+| dai4 jun1
+| dai4 xiao3 ke1
+| dai4 xiao3 ying1
+| dai4 yi1 fei1
+| dan1 guo2 hong2
+| dan1 tian2 tian2
+| dan4 pei2 ai4
+| dang3 yan4 jie2
+| deng4 hong2 qiang2
+| deng4 yu4 min2
+| deng4 yu4 sheng1
+| ding1 kai3 jun1
+| ding1 lu4
+| ding1 shu1 xin1
+| ding1 xi1 an1
+| dong3 fei1 fei1
+| dong3 he2 gen1
+| dong3 jian4
+| dong3 xian4 you3
+| dou4 jin3 peng2
+| du4 bian1 qian1 xun2
+| du4 chuang3
+| du4 feng4
+| du4 jian4 sen1
+| du4 lei3
+| du4 ming2 kun1
+| du4 peng2
+| du4 su4 mei3
+| du4 xian1
+| du4 yong3 chun1
+| du4 yuan2 zhen1
+| duan4 jia1 peng2
+| duan4 jian4 jian4
+| fan2 xi2 wei3
+| fan4 dan1 dan1
+| fan4 dao3 lian4
+| fan4 ting2
+| fan4 wei1
+| fan4 wen2 ting2
+| fang1 lan2
+| fang1 yue4 mei2
+| fang2 xi1 tao1
+| fang2 yu4 peng2
+| fei1 tian1 you3 xi1
+| fei4 xiao3 xia2
+| feng2 hua2
+| feng2 hua4
+| feng2 xiao3 xu4
+| feng2 xiao3 yun2
+| feng2 yu4 xu4
+| fu4 chun1 xian1
+| fu4 jian4 jun1
+| fu4 ming2 hao4
+| fu4 xin1
+| fu4 yan4 dong1
+| gan1 yu3
+| gao1 bing3 mao4
+| gao1 dao3 you1 zi3
+| gao1 huan1 huan1
+| gao1 hui4 zhen1
+| gao1 yan2
+| gao1 zhen1
+| gao1 zhen4 bo1
+| gao1 zhi4 e2
+| gao1 zhong4 quan2
+| ge2 yi1 ming2
+| ge2 yi4 ming2
+| ge3 yi1 ming2
+| ge3 yi4 ming2
+| gong1 zhi4 hong2
+| gou1 yu4 ying1
+| gu4 di2 biao1
+| gu4 le4 xi1
+| gu4 wen2 juan1
+| gu4 yue4 xi1
+| guan1 chao1 yun2
+| guan1 nan2
+| gui4 yuan2 ma1 li4 zi3
+| gui4 yuan2 mo2 li4 zi3
+| guo1 cheng2 fei1
+| guo1 hong2 wei3
+| guo1 hui4 jie2
+| guo1 jing1 heng2
+| guo1 li4 ying1
+| guo1 shao4 wu3
+| guo1 ya4 bing1
+| guo2 fu3 tian2 ren2 mei3
+| ha1 zha1 bu4
+| ha3 zha1 bu4
+| ha4 zha1 bu4
+| han2 dao4 lan2
+| han2 dou3 hong2
+| han2 dou4 hong2
+| han2 jing3 nan2
+| han2 liang2 yan3
+| han2 xiao3 lei2
+| han2 xiao3 ling2
+| hao3 hai3 qin2
+| he2 gao1 wei3
+| he2 he2 mei3 nai4
+| he2 wan4 you3
+| he2 zhu2 dong1
+| he4 bao3 quan2
+| he4 jian4 hua2
+| he4 ruo4 lan2
+| he4 ye3 gong1 zi3
+| he4 yong3 yong3
+| he4 yuan2
+| he4 yuan4
+| hei1 jun1 fang1
+| hong2 wang4
+| hou2 na4
+| hou2 ping2
+| hou2 xiao3 liang4
+| hou2 yan3 lei2
+| hou2 ying2 bo1
+| hou4 yi4 rong2
+| hu2 ai4 ling2
+| hu2 chang2 cun2
+| hu2 chuan2 hui1
+| hu2 pan4
+| hu2 shen1 nan2
+| hu2 wen2 wen0
+| hu2 wen2 wen2
+| hu2 xiao3 rong2
+| hu2 yu4 jie2
+| hu2 zhuan4 hui1
+| hua2 hong2 yan4
+| hua4 hong2 yan4
+| huai2 yu4 ying1
+| huang2 dong1
+| huang2 feng4 jin4
+| huang2 guan1 dong1
+| huang2 guang1 bin1
+| huang2 hui1
+| huang2 hui4 juan1
+| huang2 jia4 ying2
+| huang2 jian4 feng1
+| huang2 sheng4 li4
+| huang2 shi4 li4
+| huang2 shu1 ping2
+| huang2 shuan1 li3
+| huang2 wen2 ying1
+| huang2 yue4 fang1
+| hui4 pei4 pei4
+| hui4 yuan2 ma1 li4 zi3
+| hui4 yuan2 mo2 li4 zi3
+| ji2 gang1 mei3 he4 zi3
+| ji4 mei3 quan2
+| ji4 teng2 yu4 zi3
+| ji4 ying1 jun1
+| jia3 jun4 ai4
+| jia3 zheng4 sheng1
+| jiang1 nan2
+| jiang1 wei2 jia1
+| jiang1 zheng4 qing1
+| jiang1 zheng4 you4
+| jiang3 wei2 kang1
+| jiang3 xiang4 yang2
+| jiang3 xiao3 fei1
+| jiao1 qin2 li4
+| jiao1 yang2
+| jie3 qing1 feng1
+| jin1 li4 yan4
+| jin1 lu4
+| jin1 ming2 gang1
+| jin1 tian1 yi4
+| jin1 zi0 zhi4 nai3
+| jin4 teng2 zhen1 yan4
+| jiu3 ye3 sha1 ye1 xiang1
+| ju1 cheng2 yuan2
+| kang1 shi2
+| kang1 xiao4 xian1
+| ke1 shan1 shan1
+| ke1 yi3 rou2
+| kong3 guo2 wei3
+| lai4 jian4 hui1
+| lan2 jiu3 ping2
+| lang2 liang4 liang0
+| lang2 liang4 liang4
+| lei2 song4 de2
+| lei2 xue2 yi4
+| li2 jian4
+| li2 min3
+| li2 wei3
+| li2 wei3 hua2
+| li2 wei3 hua4
+| li2 xue3 lei3
+| li2 yong3
+| li3 cheng2
+| li3 chun1 hui1
+| li3 chun1 yan4
+| li3 cong2
+| li3 gui4 lan2
+| li3 gui4 ying1
+| li3 guo2 hui1
+| li3 hai3 yan4
+| li3 hong2 yu3
+| li3 huan2 huan2
+| li3 jian4 min3
+| li3 jie2
+| li3 jin1 fei1
+| li3 jing4
+| li3 juan1
+| li3 jun1
+| li3 jun4 wei3
+| li3 jun4 xiu4
+| li3 kai3 le4
+| li3 kai3 yue4
+| li3 li4
+| li3 lian2 zhi4
+| li3 min3
+| li3 ming2
+| li3 na4
+| li3 qi2 luo4
+| li3 qiang2
+| li3 qiu1 zhen1
+| li3 sheng1 hong2
+| li3 sheng4 hong2
+| li3 wei3
+| li3 xia2
+| li3 xiao3 juan1
+| li3 xin1 zhou1
+| li3 xing1 kai3
+| li3 xiu4 ying1
+| li3 xue3 lei3
+| li3 ya4
+| li3 yan4
+| li3 yan4 ping2
+| li3 yi4 wei2
+| li3 yong3
+| li3 yong3 jun1
+| li3 yu4 lin2
+| li3 yun4 ying2
+| li3 zhan1 hong2
+| li3 zhan4 hong2
+| li3 zhen1
+| li3 zi3 ming2
+| li4 hao4
+| lian2 hong2
+| lian2 li4 juan1
+| liang2 chen2 yi4
+| liang2 heng2
+| liang2 wei4 hong2
+| liang2 wen2 hua4
+| liang2 zhong1 hua2
+| liang2 zi3 dan1
+| liao4 jie2
+| lin2 hong2
+| lin2 li4 shuang1
+| lin2 li4 zhu1
+| lin2 lu3 xi1
+| lin2 xian1 yue4
+| lin2 yun2
+| lin2 zhi4 jian1
+| ling2 qing2
+| liu2 ai4 ping2
+| liu2 bao4
+| liu2 biao1
+| liu2 de2 jian4
+| liu2 fang1
+| liu2 fang1 hong2
+| liu2 fu2 li4
+| liu2 fu2 nian2
+| liu2 gang1 ming2
+| liu2 guang1 cai3
+| liu2 gui4 peng2
+| liu2 guo2 jing4
+| liu2 guo2 zhu4
+| liu2 hong2 liang4
+| liu2 hong2 xing1
+| liu2 hong2 zhu1
+| liu2 hu4 jia1
+| liu2 jie2
+| liu2 jin1
+| liu2 jin1 dong4
+| liu2 jin1 xiao3
+| liu2 liang4
+| liu2 min3
+| liu2 ping2 bing1
+| liu2 ren2 he2
+| liu2 ren2 he4
+| liu2 ren2 huo2
+| liu2 ren2 huo4
+| liu2 shan1 feng1
+| liu2 wei3
+| liu2 wei3 min2
+| liu2 wei3 shan1
+| liu2 xiang4 li2
+| liu2 ya4 lun2
+| liu2 ya4 tian1
+| liu2 yan2 yan2
+| liu2 yang2
+| liu2 yong3 jun1
+| liu2 yuan2
+| liu2 zu3 zhen1
+| liu3 ming2 juan1
+| long2 yan2 wu3
+| lou2 chong2 jian4
+| lou2 hui4
+| lu2 fan1
+| lu2 fan2
+| lu2 guang1 ming2
+| lu2 li2 ming2
+| lu2 xiu4 mei4
+| lu3 xiao3 jing4
+| lu4 jian4
+| lu4 jiao1
+| lu4 ping2
+| lu4 zu3 guang1
+| luan2 fei1 fei1
+| lun2 hai3 lun2
+| luo2 fu4 yi4
+| luo2 gui4 fen1
+| luo2 gui4 qin2
+| luo2 hai3 rong2
+| luo2 hai3 yun2
+| luo2 yuan2 yuan2
+| luo2 zheng4 dong1
+| lv3 fan2 wei3
+| lv3 hong2 li4
+| lv3 ji2 an1
+| lv3 xian3 tai4
+| lv3 yu4
+| ma2 yi4 jiang4
+| ma2 yi4 qiang2
+| ma3 chun1 li4
+| ma3 feng1 yi4
+| ma3 jia1 ren2
+| ma3 lei3
+| ma3 shan4 ling3
+| ma3 shao3 kun1
+| ma3 shao4 kun1
+| ma3 shu1 wen2
+| ma3 shu4 xian1
+| ma3 wen2 juan1
+| ma3 xiong2
+| ma3 xiong2 fen1
+| ma3 ye4 lei2
+| ma3 zhao1
+| mai4 zi0 jie2
+| mao2 jian4
+| mao2 jing4 yi1
+| mao2 yu4 liang2
+| mao2 zhi4 qiang2
+| mei2 gong1 an1 na4
+| mei2 yu4 bing1
+| meng4 li3
+| meng4 xiang2 lei3
+| mi3 sen1 ma2 mei3
+| ni2 chuan2 mu4
+| ni2 yu4 shuang1
+| ni2 zhuan4 mu4
+| nie4 jun1
+| niu2 meng2
+| niu2 wen2 hui4
+| ou1 wen2 hui1
+| ou1 yang2 jian4 rong2
+| pan1 chen2 wei3
+| pan1 kang1
+| peng2 lai2 bao3
+| peng2 shan4 bing1
+| peng2 wei2 wei2
+| peng2 xiao3 rong2
+| peng2 yan4
+| pi2 xiu4 shuang1
+| pu3 tian1 jun1
+| qi2 bao3 feng1
+| qi2 de2 xiao4
+| qi2 huai2 feng1
+| qi2 yang2
+| qian2 hou4 da2
+| qian2 jing3 li3 hui4
+| qian2 ying1
+| qian3 jing3 li3 hui4
+| qiu1 ben3 nai4 xu4 mei3
+| qiu1 yi4 cheng2
+| qiu1 ying2
+| ran3 xin1 yan2
+| ren2 zhi4 qin2
+| ren4 zhi4 qin2
+| shan1 ye3 zhen1 you2
+| shan4 guo2 hong2
+| shan4 tian2 tian2
+| shang4 shan1 li2 hua2
+| shang4 shan1 li2 hua4
+| shang4 xue3 ning2
+| shang4 xue3 ning4
+| shao4 bin1
+| shao4 bo1
+| shao4 qing4 fen1
+| shao4 sheng1 wei3
+| shao4 sheng4 wei3
+| shao4 xiao3 ying1
+| shao4 zhe4 gao1
+| shen3 hai3 yang2
+| shen3 li4 qun2
+| shen3 lin2
+| shen3 xiao3 jun1
+| shen3 yi4
+| shen3 yong3 ling2
+| sheng4 hua2 rong2
+| shi1 ai4 min3
+| shi2 lin2 na4
+| shi2 pei2 ai4
+| shi3 de2 cheng2
+| shi3 de2 hua2
+| shi3 jun1 sheng1
+| shuai4 an1 ning2
+| shui2 ye3 he2 mei3
+| shui3 ye3 he2 mei3
+| shui3 ze2 cai4 mei3
+| si1 mei3 qin2
+| si3 duo1 tou2
+| song4 guang3 meng3
+| song4 hua2 qiang2
+| song4 lin2 hai3
+| song4 song1 song1
+| song4 xiao3 bing1
+| song4 yu4 peng2
+| su1 lin2
+| su1 zhao1 hui1
+| sun1 bang1 xian3
+| sun1 chang2 fen1
+| sun1 cui4 hong2
+| sun1 dong1 ming2
+| sun1 fang1 jie2
+| sun1 jian4 wei3
+| sun1 kai3
+| sun1 li4 chao1
+| sun1 long2 xia2
+| sun1 ming2 lu4
+| sun1 qi2 chen2
+| sun1 wen2 ju3
+| sun1 wen2 ting2
+| sun1 xiang2 ling2
+| sun1 xiao4 chen1
+| sun1 yan2 xia2
+| sun1 yi4 min3
+| sun1 yu4 li4
+| sun1 zhan1 geng1
+| sun1 zhan4 geng1
+| sun1 zhang3 fen1
+| sun1 zhao4 hua2
+| sun1 zhao4 hua4
+| sun1 zhuo1 jing4
+| tan2 gen3 ming2
+| tan2 yan4 ling2
+| tan2 zhi4 ying1
+| tang1 yu3 feng1
+| tang2 cai3 yun2
+| tang2 xiao3 qian4
+| tao2 chun1 yan4
+| tao2 kai3 chuan2
+| tao2 kai3 zhuan4
+| tao2 liang4 liang0
+| tao2 liang4 liang4
+| tao2 shuang1
+| tian2 duan1 zheng4
+| tian2 run4 ze2
+| tian2 shi4 xia2
+| tian2 shu1 hua2
+| tong2 shi4 jun1
+| tong2 xiang4 rong2
+| wan4 bei4 bei4
+| wang1 jun1
+| wang1 lei3
+| wang2 chao1
+| wang2 dong1 dong1
+| wang2 fang1
+| wang2 gang1
+| wang2 gui4 fang1
+| wang2 hai3 ji1
+| wang2 hai3 qi2
+| wang2 hai3 yun2
+| wang2 hu3 yuan2
+| wang2 hui4 fang1
+| wang2 jia1 yan4
+| wang2 jie2
+| wang2 jin1 wu3
+| wang2 jing4
+| wang2 juan1
+| wang2 jun1
+| wang2 lei3
+| wang2 li4
+| wang2 li4 bo1
+| wang2 li4 zhu1
+| wang2 lin2 ling2
+| wang2 ling2
+| wang2 min3
+| wang2 ming2 lun2
+| wang2 pei2 ju3
+| wang2 pi1 duan1
+| wang2 ping2
+| wang2 qiang2
+| wang2 qing4 gang1
+| wang2 qing4 yu4
+| wang2 shi4 yong1
+| wang2 shuang1 xuan1
+| wang2 tao1
+| wang2 wei3
+| wang2 wen2 wen0
+| wang2 wen2 wen2
+| wang2 wen2 zheng4
+| wang2 wen4 yan4
+| wang2 xi3
+| wang2 xiao3 long2
+| wang2 xiao4 xiao0
+| wang2 xiao4 xiao4
+| wang2 xin1 jiang1
+| wang2 xin1 long2
+| wang2 xiu4
+| wang2 xiu4 fang1
+| wang2 xiu4 lan2
+| wang2 xiu4 ying1
+| wang2 yan2 chun1
+| wang2 yan4
+| wang2 yi4 lin2
+| wang2 ying1 xiang1
+| wang2 ying3
+| wang2 ying4 xiang1
+| wang2 yong3
+| wang2 yong3 jun1
+| wang2 yong3 mei2
+| wang2 zhao4 lei3
+| wang2 zhi4 jiu3
+| wang2 zi3 hong2
+| wang2 zi3 xin1
+| wei2 jin4 jian4
+| wei2 qi2 yan4
+| wei4 guang1 bin1
+| wei4 jin1 feng4
+| wei4 tong2 tong2
+| wei4 wei1
+| wei4 xiao3 hui1
+| wen2 yu4 min2
+| weng1 de2 en1
+| wo3 qi1 sha1 zhi1
+| wu1 feng1
+| wu1 ya3 hong2
+| wu2 cui4 qiu1
+| wu2 feng1 ying1
+| wu2 hua2 te4
+| wu2 hui4 liang2
+| wu2 hui4 qin2
+| wu2 lin2 qing1
+| wu2 ling2 ying1
+| wu2 mei3 yun2
+| wu2 meng4 ting2
+| wu2 ping2 qing1
+| wu2 song1 tao1
+| wu2 tian1 hong2
+| wu2 xiu4 li4
+| wu2 ya4 rong2
+| wu2 ze2 jian1
+| wu2 zi3 yun2
+| wu3 bao3 fang1
+| wu3 jian4 kui2
+| wu3 su4 hua2
+| wu3 xian1 shun4
+| wu3 xiao3 yan4
+| xia4 yi2
+| xiang4 jing3 li3 sha1
+| xiao1 jian4 jie2
+| xiao1 ying1 yu4
+| xiao1 yong3 fa1
+| xiao1 yun2
+| xiao1 yun2 fei1
+| xiao1 ze2 xu4
+| xiao1 zheng4
+| xiao2 hu3 dui4
+| xiao3 chuan1 mei3 you2 ji4
+| xiao3 hu3 dui4
+| xiao3 lin2 hui4
+| xiao4 jian4 jie2
+| xiao4 ying1 yu4
+| xiao4 yong3 fa1
+| xiao4 yun2
+| xiao4 yun2 fei1
+| xiao4 ze2 xu4
+| xiao4 zheng4
+| xie4 guang3 an1
+| xie4 hui1
+| xie4 qing1 feng1
+| xie4 yu4 qin2
+| xie4 yuan2 qing4
+| xin1 guo2 dong4
+| xin1 zhuang1 ai4
+| xing2 ding4 yin2
+| xing2 ji4 long2
+| xing2 lou4 ying2
+| xing2 lu4 ying2
+| xiong2 jin1 song1
+| xiu1 li4 li0
+| xiu1 li4 li4
+| xu2 chuang1 song1
+| xu2 chuang4 song1
+| xu2 chun1 mei2
+| xu2 hai3 bin1
+| xu2 hai3 ming2
+| xu2 hai3 ou1
+| xu2 hao4 fei1
+| xu2 ke3
+| xu2 qi2
+| xu2 qing1 chun1
+| xu2 rong2
+| xu2 wei3 xin1
+| xu2 yu4 xia2
+| xu2 yuan3 dong1
+| xu2 yun2 feng1
+| xu2 zhao4 yuan2
+| xu2 zhao4 yuan4
+| xu3 an1 yong3
+| xu3 chun1 ze2
+| xu3 qiu1 yue4
+| xu3 ru2 ru2
+| xu3 wan3 ning2
+| xu3 wan3 ning4
+| xu3 xian2 ming2
+| xue1 xue2 gang1
+| yan2 fei3
+| yan2 ke4 fa1
+| yan2 shuai4 qin2
+| yang2 ai4 hong2
+| yang2 cheng2 jun1
+| yang2 cheng2 lin2
+| yang2 gao1 yue4
+| yang2 hao3 li4
+| yang2 hao4 li4
+| yang2 hu4 ning2
+| yang2 hu4 ning4
+| yang2 hui4 peng2
+| yang2 jun1 wei3
+| yang2 kun1
+| yang2 li4 jun1
+| yang2 li4 ping2
+| yang2 nuan3
+| yang2 qi2
+| yang2 shen1
+| yang2 xiao3 an1
+| yang2 xu2 jun1
+| yang2 xue2 qin2
+| yang2 yong3
+| yang2 yu4 ping2
+| yao2 feng4 wei3
+| yao2 hui4 qing1
+| yao2 jing1 jing1
+| yao2 ju2 peng2
+| yao2 wen2 jin1
+| yao2 yue4 ping2
+| ye3 ban3 lun2 zi3
+| ye4 chao1 qun2
+| ye4 hai3
+| ye4 he2 gui4 zi3
+| ye4 he4 gui4 zi3
+| ye4 huo2 gui4 zi3
+| ye4 huo4 gui4 zi3
+| ye4 jian4 fei1
+| ye4 kai3 bin1
+| ye4 ming2
+| ye4 zhi3 jun1
+| yin1 ming2 liang4
+| yin1 qi2 wei3
+| yin1 qi3 di2
+| yin1 qi3 fei1
+| yin3 ping2 ping2
+| ying1 tian2 chun2 zi3
+| you2 lu4 jie2
+| yu1 feng1
+| yu2 chang1 zhi4
+| yu2 da4 lu3
+| yu2 de2 qiang2
+| yu2 guang3 lei3
+| yu2 hai3 xia2
+| yu2 jia1 zheng4
+| yu2 kui2 xin1
+| yu2 wei3 dong1
+| yu2 yong3
+| yu2 zhi4 chen2
+| yu4 bai3 qi2
+| yu4 bo2 qi2
+| yuan2 xin1 xing1
+| yuan2 yan2 yan2
+| yuan2 ying1
+| yuan3 ye3 wu2 zi3
+| yuan3 ye3 wu3 zi3
+| yue4 qiu1 ya4 you2
+| ze2 jing3 chun1 nai4
+| ze2 mu4 liang2 zi3
+| zeng1 liang2 jia1
+| zeng1 sheng1 jian1
+| zeng1 xiang2 wei1
+| zha1 na4
+| zha1 ru3 jun4
+| zhan1 guo2 rong2
+| zhan1 xue3 lin2
+| zhan4 lin2 zhi1
+| zhang1 bing3 hua2
+| zhang1 bing3 hua4
+| zhang1 bo2
+| zhang1 cai3 xia2
+| zhang1 chao2 dong1
+| zhang1 chao2 ren2
+| zhang1 chun1 xiu4
+| zhang1 deng1 ming2
+| zhang1 gai3 qin2
+| zhang1 guo2 qing1
+| zhang1 hai3 liang2
+| zhang1 hong2 ji2
+| zhang1 jia1 hui1
+| zhang1 jian4 peng2
+| zhang1 jie2
+| zhang1 jing4
+| zhang1 jun1
+| zhang1 kang1
+| zhang1 lei3
+| zhang1 li4
+| zhang1 lin2 sen1
+| zhang1 min2 zhou1
+| zhang1 min3
+| zhang1 peng2 jiang4
+| zhang1 peng2 qiang2
+| zhang1 qiang2
+| zhang1 qun2 sheng1
+| zhang1 rong2 kun1
+| zhang1 san1 hua1
+| zhang1 sheng4 lei2
+| zhang1 shi1 qin1
+| zhang1 shi4 jun1
+| zhang1 shun4 de2
+| zhang1 tao1
+| zhang1 wei3
+| zhang1 wen2 qi2
+| zhang1 xi3 zhi4
+| zhang1 xiao3 mei2
+| zhang1 xiao3 yun2
+| zhang1 xin4 zhe2
+| zhang1 xiu4 ying1
+| zhang1 xu4
+| zhang1 yan4
+| zhang1 yang2
+| zhang1 yi4 dong1
+| zhang1 yong3
+| zhang1 yu4 min3
+| zhang1 yu4 sheng1
+| zhang1 yuan2 dong1
+| zhang1 yun4 cai2
+| zhang1 zhao4 bo1
+| zhang1 zhao4 tong1
+| zhang1 zheng4 fei1
+| zhang1 zhi4 tao1
+| zhao4 cai3 dan1
+| zhao4 jian4 kuan1
+| zhao4 ju3
+| zhao4 min3 meng4
+| zhao4 ming2 hao4
+| zhao4 si1 ying2
+| zhao4 wei4 hong2
+| zhao4 wen2 fei1
+| zhao4 xu4 fei1
+| zhao4 yan4 long2
+| zhao4 yin2 chuan1
+| zhao4 zhi4 liang4
+| zhao4 zhi4 yong3
+| zhen1 bi4 xiao2 juan3
+| zhen1 bi4 xiao3 juan3
+| zhen1 bi4 xiao3 juan4
+| zhen1 gong1 ling2
+| zheng4 chun1 jie2
+| zheng4 hong2
+| zheng4 jiang1 hao4
+| zheng4 jie2
+| zheng4 jing1
+| zheng4 li4 zhu1
+| zheng4 lin2 jie2
+| zheng4 lin2 lin2
+| zheng4 qiu1 yun2
+| zheng4 ru2 jiang4
+| zheng4 ru2 qiang2
+| zheng4 xiao3 qiang2
+| zheng4 xiao3 tong2
+| zheng4 yi4
+| zheng4 yong3 zhao4
+| zheng4 yu4 hong2
+| zhong1 yan4
+| zhong3 heng2
+| zhong4 heng2
+| zhong4 jian4 chun1
+| zhou1 bo2 qiang2
+| zhou1 hao4
+| zhou1 ke1
+| zhou1 ke1 yong3
+| zhou1 li4 xiang1
+| zhou1 lin2 ying1
+| zhou1 long2
+| zhou1 shui3 lan2
+| zhou1 xue3 ying2
+| zhou1 zhi4 fu2
+| zhou1 zhi4 li4
+| zhu1 bao3 long2
+| zhu1 fang1 hui1
+| zhu1 jia1 xi3
+| zhu1 ling2
+| zhu1 mei3 ling2
+| zhu1 mei3 zhen1
+| zhu1 ning2
+| zhu1 ning4
+| zhu1 tao2 guang3
+| zhu1 xiang4 bin1
+| zhu1 yi2 ning2
+| zhu1 yi2 ning4
+| zhu1 yi4 bo2
+| zhu1 ying2 han2
+| zhu1 zhao4 li4
+| zhu2 shuo4 yuan2
+| zhu3 zhao4 xia2
+| zhu4 ge1 min2
+| zhuang1 jian4 xiong2
+| zhuang1 jing4
+| zhuang1 li4
+| zhuang1 xue2 zhong1
+| zhuang1 zi3 bin1
+| zong1 yu2 dan1
+| zuo3 teng2 ya4 xi1
+| zuo3 teng2 zhi1 li3 zi0
+| Abigail
+| Adam
+| Adrian
+| Alex
+| Alexander
+| Alexandra
+| Alexis
+| Andrew
+| Angel
+| Anna
+| Anthony
+| Ashley
+| Audrey
+| Autumn
+| Bailey
+| Bella
+| Benjamin
+| Blake
+| Brandon
+| Brian
+| Bryan
+| Cameron
+| Carlos
+| Caroline
+| Carson
+| Carter
+| Charles
+| Charlotte
+| Chase
+| Chloe
+| Christian
+| Christopher
+| Cole
+| Colton
+| Connor
+| Cooper
+| Daniel
+| David
+| Destiny
+| Diego
+| Dominic
+| Elizabeth
+| Emily
+| Emma
+| Eric
+| Eva
+| Evelyn
+| Faith
+| Gavin
+| Genesis
+| Grace
+| Hailey
+| Hannah
+| Hayden
+| Henry
+| Hunter
+| Ian
+| Isaac
+| Isabella
+| Isabelle
+| Jack
+| Jackson
+| Jacob
+| James
+| Jasmine
+| Jason
+| Jessica
+| Jesus
+| Jocelyn
+| John
+| Jonathan
+| Jordan
+| Jose
+| Joseph
+| Joshua
+| Juan
+| Julia
+| Julian
+| Justin
+| Katherine
+| Kevin
+| Kimberly
+| Kyle
+| Kylie
+| Landon
+| Lauren
+| Lillian
+| Lily
+| Logan
+| Luke
+| Madeline
+| Maria
+| Mason
+| Matthew
+| Michael
+| Molly
+| Morgan
+| Natalie
+| Nathan
+| Nathaniel
+| Nicholas
+| Noah
+| Oliver
+| Olivia
+| Parker
+| Payton
+| Rachel
+| Robert
+| Samantha
+| Samuel
+| Sarah
+| Savannah
+| Sean
+| Sebastian
+| Serenity
+| Sofia
+| Sophia
+| Sophie
+| Sydney
+| Taylor
+| Thomas
+| Trinity
+| Valeria
+| Vanessa
+| Victoria
+| William
+| Zoe
+;
+
+<PhoneNumber> =
+  (yi1|yao1) (yi1|yao1|er4) <Digits>
+| (yi1|yao1|jiu3) <Digits> <Digits> <Digits> <Digits>
+| [ling2 <Digits> <Digits> [<Digits>] ["<sil>"]] <Digits> <Digits> <Digits> ["<sil>"] <Digits> ["<sil>"] <Digits> <Digits> <Digits> [<Digits>]
+| (yi1|yao1) (san1|si4|wu3|ba1) <Digits> ["<sil>"] <Digits> ["<sil>"] <Digits> <Digits> <Digits> ["<sil>"] <Digits> <Digits> <Digits> <Digits>
+| (si4|ba1) ling2 ling2 ["<sil>"] <Digits> ["<sil>"] <Digits> <Digits> ["<sil>"] <Digits> ["<sil>"] <Digits> <Digits> <Digits>
+;
+
+<Digits> = 
+  ling2
+| yi1
+| yao1
+| er4
+| san1
+| si4
+| wu3
+| liu4
+| qi1
+| ba1
+| jiu3
+;
